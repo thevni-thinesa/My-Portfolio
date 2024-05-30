@@ -8,8 +8,8 @@
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5px;
-    gap: 10px;
+    margin-top: 10px;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -38,16 +38,15 @@
     border: 0.1px solid #04068f;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
     border-radius: 16px;
-    max-width: 400px;
-    padding: 2px 10px;
+    max-width: 350px;
+    padding: 20px 10px;
 }
     
 .skill-title {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 550;
     color: #b0afaf;
     text-align: center;
-    padding: 5px;
 }
     
 .skill-list {
@@ -55,17 +54,18 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 5px;
+    padding-top: 15px;
 }
     
 .skill-item {
     font-size: 16px;
     font-weight: 300;
     border-radius: 12px;
-    padding: 10px 15px;
+    padding: 8px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 
 }
 
