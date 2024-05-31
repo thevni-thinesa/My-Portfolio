@@ -23,7 +23,7 @@
 
 .skills-container .skills-box:hover{
     border-color: var(--main-color);
-    transform: scale(1.02);
+    transform: scale(1.1);
     position: relative;
     display: flex;
     justify-content: space-between;
