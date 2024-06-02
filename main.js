@@ -4,7 +4,7 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () =>{
-    menuIcon.classList.toggle('fa-x');
+    menuIcon.classList.toggle('fa-xmark');
     navbar.classList.toggle('active');
 }
 
@@ -33,6 +33,20 @@ window.onscroll = () => {
     header.classList.toggle('sticky', window.scrollY > 100);
     
     /*============================================ remove toggle icon and navbar =======================================*/ 
-    menuIcon.classList.remove('fa-x');
+    menuIcon.classList.remove('fa-xmark');
     navbar.classList.remove('active');
 };
+
+/*============================================ scroll reveal =======================================*/ 
+ScrollReveal({
+    distance: '80px',
+    duration: 2000,
+    delay: 200,
+});
+
+ScrollReveal().reveal('.about-content, heading', { origin: 'top' });
+ScrollReveal().reveal('.about-img', { origin: 'bottom' });
+ScrollReveal().reveal('.about-content h1, .social-media', { origin: 'left' });
+ScrollReveal().reveal('.about-content p, a', { origin: 'right' });
+ScrollReveal().reveal('.skills-container, .education-box', { origin: 'left' });
+ScrollReveal().reveal('.projects-box, .contact form', { origin: 'right' });
