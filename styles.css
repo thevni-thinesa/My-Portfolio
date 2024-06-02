@@ -1,5 +1,6 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght @0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000,1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swop');*/
 /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
     margin: 0;
@@ -38,7 +39,7 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1.5rem 9%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -53,11 +54,15 @@ section{
     cursor: default;
 }
 
+.navbar{
+    margin-left: 30rem;
+}
+
 .navbar a{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: var(--text-color);
     font-weight: 650;
-    margin-left: 3rem;
+    margin-left: 1.5rem;
 }
 
 .navbarg a{
@@ -246,13 +251,13 @@ span{
 }
 
 .projects-container .projects-box{
-    position: relative;
+    position:relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
     width: 90%;
-    height: 80%;
+    height: 90%;
     border: 2.5px solid #04068fb2;
 }
 
@@ -332,7 +337,7 @@ span{
 .education-container{
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
+    width: 100%;
     margin-top: 10px;
     flex-direction: column;
     display: flex;
@@ -391,12 +396,12 @@ span{
 }
 
 .contact form .input-box input{
-    width: 60%;
+    width: 90%;
 }
 
 .contact form textarea{
     resize: none;
-    width: 60%;
+    width: 90%;
     padding: 1.5rem;
     font-size: 1.8rem;
     color: var(--text-color);
@@ -582,12 +587,20 @@ span{
     .projects-container{
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media(max-width: 617px){
     .projects-container{
         grid-template-columns: 1fr;
-        padding-left: 8%;
+        padding-right: 5%;
+        width: 100vw;
+    }
+
+    .education-container, .education-box{
+        width: 160vw;
+        margin-right: 46%;
+        
     }
 
     .about-img img{

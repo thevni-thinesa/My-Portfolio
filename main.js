@@ -1,12 +1,12 @@
 /*============================================ toggle icon navbar =======================================*/ 
 
 let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+let Navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () =>{
     menuIcon.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active');
-}
+    Navbar.classList.toggle('active');
+};
 
 /*============================================ scroll section active link =======================================*/ 
 
@@ -18,12 +18,12 @@ window.onscroll = () => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+        let Id = sec.getAttribute('id');
 
         if (top >= offset && top < offset + height) {
-            navLinks.forEach.apply(links => {
+            navLinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('header nav a[href"=' + id + ']').classList.add('active');
+                document.querySelector('header nav a [href*=' + Id + ']').classList.add('active');
             });
         };
     });
@@ -34,7 +34,7 @@ window.onscroll = () => {
     
     /*============================================ remove toggle icon and navbar =======================================*/ 
     menuIcon.classList.remove('fa-xmark');
-    navbar.classList.remove('active');
+    Navbar.classList.remove('active');
 };
 
 /*============================================ scroll reveal =======================================*/ 
@@ -45,8 +45,8 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.about-content, heading', { origin: 'top' });
-ScrollReveal().reveal('.about-img', { origin: 'bottom' });
-ScrollReveal().reveal('.about-content h1, .social-media', { origin: 'left' });
-ScrollReveal().reveal('.about-content p, a', { origin: 'right' });
+ScrollReveal().reveal('.about-img', { origin: 'right' });
+ScrollReveal().reveal('.about-content h1, .about-content p,.about-content h3, .social-media', { origin: 'left' });
+ScrollReveal().reveal('.about-content a', { origin: 'right' });
 ScrollReveal().reveal('.skills-container, .education-box', { origin: 'left' });
 ScrollReveal().reveal('.projects-box, .contact form', { origin: 'right' });
