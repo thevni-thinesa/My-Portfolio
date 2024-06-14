@@ -50,3 +50,13 @@ ScrollReveal().reveal('.about-content h1, .about-content p,.about-content h3, .s
 ScrollReveal().reveal('.about-content a', { origin: 'right' });
 ScrollReveal().reveal('.skills-container, .education-box', { origin: 'left' });
 ScrollReveal().reveal('.projects-box, .contact form', { origin: 'right' });
+
+
+/*============================================ typed js =======================================*/ 
+const typed = new Typed ('.multiple-text',{
+    strings:['Front-End Developer', 'Web Developer'],
+    typeSpeed: 70,
+    backSpeed: 60,
+    backDelay: 1000,
+    loop: true
+});
