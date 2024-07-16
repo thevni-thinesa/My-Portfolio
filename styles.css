@@ -240,7 +240,7 @@ span{
 }
 
 .projects h1{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     font-size: 4rem;
 }
 
@@ -256,8 +256,8 @@ span{
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     border: 2.5px solid #04068fb2;
 }
 
