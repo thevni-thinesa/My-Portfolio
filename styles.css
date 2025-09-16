@@ -449,42 +449,51 @@ span{
 }
 
 /* BREAKPOINTS */
-@media(max-width:768px){
-    #menu-icon{
-        display:block;
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: fixed;
+        top: 1.5rem;
+        right: 1.5rem;
+        z-index: 1001;
     }
 
-    .navbar{
+    .navbar {
         position: fixed;
-        top: 0%;
-        left: 30%;
-        transform: translateX(-50%) translateY(-100%); /* start hidden above screen */
-        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 80%;
         max-width: 350px;
-        background: rgba(25, 31, 54, 0.705); /* translucent background */
+        background: rgba(25, 31, 54, 0.9);
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         gap: 1.5rem;
-        padding: 4rem 2rem 2rem; /* space for menu icon */
+        padding: 2.5rem 2rem;
         border-radius: 1.5rem;
-        box-shadow: 0 0 2rem rgba(229, 223, 223, 0.68);
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
         transition: transform 0.4s ease, opacity 0.4s ease;
-        display: flex;
         opacity: 0;
-        z-index: 999;
+        display: flex;
+        z-index: 1000;
+        overflow-y: auto;
+        max-height: 80vh;
     }
 
-    .navbar.active{
-        transform: translateX(-50%) translateY(0); /* slide down when active */
+    .navbar.active {
+        transform: translate(-50%, -50%) scale(1);
         opacity: 1;
     }
 
-    .navbar a{
-        font-size: 1.8rem;
-        margin: 1rem 0;
+    .navbar a {
+        font-size: 1.5rem;
         text-align: center;
+        width: 100%;
     }
+}
 
     .about{
         flex-direction:column;
@@ -520,13 +529,14 @@ span{
     }
 }
 
-@media(max-width:450px){
-    html{
-        font-size:50%;
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
     }
     .contact form .input-box input,
-    .contact form textarea{
-        width:100%;
+    .contact form textarea {
+        width: 100%;
     }
 }
+
 
