@@ -449,94 +449,94 @@ span{
 }
 
 /* BREAKPOINTS */
-@media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
-        position: fixed;
-        top: 1.5rem;
-        right: 1.5rem;
-        z-index: 1001;
+@media(max-width:768px){
+    #menu-icon{
+        display:block;
     }
 
-    .navbar {
+    .navbar{
         position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        width: 80%;
+        transform: translateX(-50%) translateY(-100%); /* start hidden above screen */
+        width: 90%;
         max-width: 350px;
-        background: rgba(25, 31, 54, 0.9);
+        background: rgba(25, 31, 54, 0.9); /* slightly darker for visibility */
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         gap: 1.5rem;
-        padding: 2.5rem 2rem;
+        padding: 4rem 2rem 2rem; /* space for menu icon */
         border-radius: 1.5rem;
-        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 2rem rgba(229, 223, 223, 0.68);
         transition: transform 0.4s ease, opacity 0.4s ease;
-        opacity: 0;
         display: flex;
-        z-index: 1000;
+        opacity: 0;
+        z-index: 999;
+        max-height: 80vh; /* prevent overflow */
         overflow-y: auto;
-        max-height: 80vh;
     }
 
-    .navbar.active {
-        transform: translate(-50%, -50%) scale(1);
+    .navbar.active{
+        transform: translateX(-50%) translateY(0); /* slide down when active */
         opacity: 1;
     }
 
-    .navbar a {
-        font-size: 1.5rem;
+    .navbar a{
+        font-size: 1.8rem;
+        margin: 1rem 0;
         text-align: center;
-        width: 100%;
     }
-}
 
     .about{
-        flex-direction:column;
+        flex-direction: column;
+        padding: 2rem 5%;
     }
 
     .about-img img{
-        width:60vw;
-        margin:2rem 0;
+        width: 80%;
+        margin: 2rem auto;
     }
 
     .about-content .btn{
-        width:60%;
-    }
-
-    .about-content .social-media{
-        justify-content:center;
+        width: 70%;
     }
 
     .projects-container{
-        grid-template-columns:1fr;
-        padding:0 5%;
-        gap:2rem;
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+        gap: 2rem;
     }
 
     .education-container, .education-box{
-        width:220%;
-        margin-right: 55%;
+        width: 90%;
+        margin: 1rem auto;
     }
 
     .skills-container{
-        justify-content:center;
-        gap:1rem;
+        justify-content: center;
+        gap: 1rem;
     }
 }
 
-@media (max-width: 450px) {
-    html {
-        font-size: 50%;
+@media(max-width:450px){
+    html{
+        font-size:50%;
     }
+
     .contact form .input-box input,
-    .contact form textarea {
+    .contact form textarea{
         width: 100%;
     }
+
+    .about-content h1{
+        font-size: 3.5rem;
+    }
+
+    .about-content h3{
+        font-size: 2.2rem;
+    }
 }
+
 
 
