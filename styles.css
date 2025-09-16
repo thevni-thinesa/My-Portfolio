@@ -326,7 +326,6 @@ span{
 /* EDUCATION */
 .education h2{
     font-size: 4rem;
-    margin-bottom: 3rem;
 }
 
 .education-container{
@@ -376,7 +375,6 @@ span{
 /* CONTACT */
 .contact h2{
     font-size: 4rem;
-    margin-bottom: 3rem;
 }
 
 .contact form{
@@ -405,7 +403,7 @@ span{
 .contact form .btn{
     margin-top: 1.5rem;
     cursor: pointer;
-    width: 25%;
+    width: 40%;
     padding: 1rem;
     font-size: 1.5rem;
     color: var(--text-color);
@@ -655,7 +653,7 @@ span{
 /* Small phones */
 @media (max-width: 450px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 }
 
