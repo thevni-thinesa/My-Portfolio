@@ -48,18 +48,18 @@ section{
 }
 
 .logo{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: var(--text-color);
     font-weight: 700;
     cursor: default;
 }
 
 .navbar{
-    margin-left: 30rem;
+    margin-left: 20rem;
 }
 
 .navbar a{
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: var(--text-color);
     font-weight: 650;
     margin-left: 1.5rem;
@@ -128,9 +128,9 @@ span{
 }
 
 .about-img img{
-    width: 26.5vw;
+    width: 29.5vw;
     padding-left: 35px;
-    animation: floatImage 4s ease-in-out infinite;
+    /*animation: floatImage 4s ease-in-out infinite;*/
 }
 
 @keyframes floatImage{
@@ -147,10 +147,10 @@ span{
 }
 
 .about-content p{
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-align: justify;
     padding-right: 10px;
-    color: rgba(255, 255, 255, 0.596);
+    color: rgba(255, 255, 255, 0.881);
 }
 
 .social-media a{
@@ -290,6 +290,11 @@ span{
 
 .projects-box:hover .projects-layer{
     transform: translateY(0);
+}
+
+.projects-layer h5{
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.877);
 }
 
 .projects-layer h4{
