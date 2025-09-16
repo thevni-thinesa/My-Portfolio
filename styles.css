@@ -450,7 +450,7 @@ span{
 
 /* BREAKPOINTS */
 /* Tablets and large phones (up to 768px) */
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     #menu-icon {
         display: contents;
         cursor: pointer;
@@ -532,14 +532,14 @@ span{
 }
 
 /* Small phones (up to 450px) */
-@media (max-width: 768px) {
+@media (max-width: 450px) {
     html {
         font-size: 50%;
     }
 
     .contact form .input-box input,
     .contact form textarea {
-        width: 100%;
+        width: 90%;
     }
 
     .about-content h1 {
