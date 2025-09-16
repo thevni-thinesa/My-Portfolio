@@ -450,18 +450,18 @@ span{
 
 /* BREAKPOINTS */
 /* Tablets and large phones (up to 768px) */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     #menu-icon {
         display: contents;
         cursor: pointer;
         /*margin-left: 10%;*/
-    }
+    /*}*/
 
-    .navbar {
+    /*.navbar {
         position:absolute;
         top: 0%;
         left: 50%;
-        transform: translate(-50%, -100%); /* hidden above screen */
+        transform: translate(-50%, -100%);
         width: 50%;
         height: 60%;
         background: rgba(25, 31, 54, 0.85);
@@ -476,12 +476,12 @@ span{
         display: flex;
         opacity: 0;
         z-index: 999;
-        overflow-y: 90%; /* scrollable if content overflows */
+        overflow-y: 90%;
         max-height: 80vh;
-    }
+    }*/
 
-    .navbar.active {
-        transform: translate(-50%, -50%); /* center when active */
+    /*.navbar.active {
+        transform: translate(-50%, -50%); 
         opacity: 1;
     }
 
@@ -489,10 +489,10 @@ span{
         font: size 50px;
         margin: 1rem 0;
         text-align: center;
-    }
+    }*/
 
     /* About section */
-    .about {
+    /*.about {
         flex-direction: column;
         padding: 5rem 5%;
         padding-top: 20%;
@@ -510,30 +510,30 @@ span{
 
     .about-content .social-media {
         justify-content: center;
-    }
+    }*/
 
     /* Projects */
-    .projects-container {
+    /*.projects-container {
         grid-template-columns: 1fr;
         padding: 0 5%;
         gap: 2rem;
-    }
+    }*/
 
     /* Education */
-    .education-container, .education-box {
+    /*.education-container, .education-box {
         width: 220%;
         margin-right: 55%;
-    }
+    }*/
 
     /* Skills */
-    .skills-container {
+    /*.skills-container {
         justify-content: center;
         gap: 1rem;
     }
-}
+}*/
 
 /* Small phones (up to 450px) */
-@media (max-width: 450px) {
+/*@media (max-width: 450px) {
     html {
         font-size: 50%;
     }
@@ -558,6 +558,43 @@ span{
     .navbar a {
         font-size: 1.6rem;
     }
+}*/
+
+
+
+
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-200%);
+    width: 85%;
+    background: rgba(25, 31, 54, 0.9);
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: 0.4s;
+  }
+  .navbar.active {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
 }
 
+
+/* Small phones */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
 
