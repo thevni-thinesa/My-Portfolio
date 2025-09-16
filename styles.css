@@ -459,17 +459,17 @@ span{
 
     .navbar {
         position:absolute;
-        top: 40%;
-        left: 40%;
+        top: 0%;
+        left: 50%;
         transform: translate(-50%, -100%); /* hidden above screen */
         width: 50%;
-        height: 55%;
+        height: 60%;
         background: rgba(25, 31, 54, 0.85);
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         gap: 2rem;
-        /*padding: 4rem 2rem 2rem;*/
+        padding: 4rem 2rem 2rem;
         border-radius: 1.5rem;
         box-shadow: 0 0 2rem rgba(229, 223, 223, 0.68);
         transition: transform 0.4s ease, opacity 0.4s ease;
@@ -489,10 +489,6 @@ span{
         font: size 50px;
         margin: 1rem 0;
         text-align: center;
-    }
-
-    .navbarg {
-        margin-right: 10%;
     }
 
     /* About section */
