@@ -454,7 +454,7 @@ span{
     #menu-icon {
         display: contents;
         cursor: pointer;
-        margin-left: 10%;
+        /*margin-left: 10%;*/
     }
 
     .navbar {
@@ -469,14 +469,14 @@ span{
         justify-content: flex-start;
         align-items: center;
         gap: 2rem;
-        padding: 4rem 2rem 2rem;
+        /*padding: 4rem 2rem 2rem;*/
         border-radius: 1.5rem;
         box-shadow: 0 0 2rem rgba(229, 223, 223, 0.68);
         transition: transform 0.4s ease, opacity 0.4s ease;
         display: flex;
         opacity: 0;
         z-index: 999;
-        overflow-y: auto; /* scrollable if content overflows */
+        overflow-y: 90%; /* scrollable if content overflows */
         max-height: 80vh;
     }
 
