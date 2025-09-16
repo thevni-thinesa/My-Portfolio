@@ -449,37 +449,28 @@ span{
 }
 
 /* BREAKPOINTS */
-@media(max-width: 991px){
-    section{
-        padding: 5rem 3%;
-    }
-    .header{
-        padding: 1rem 3%;
-    }
-}
-
-@media(max-width: 768px){
+@media(max-width:768px){
     #menu-icon{
         display:block;
-        cursor:pointer;
     }
 
     .navbar{
-        display:none;
         position:fixed;
         top:0;
         left:0;
         width:100vw;
         height:100vh;
-        padding:8rem 2rem;
-        background: rgba(25,31,54,0.95);
         flex-direction:column;
         justify-content:flex-start;
         align-items:center;
+        background: rgba(25,31,54,0.95);
+        gap:2rem;
+        padding-top:8rem;
+        transform: translateY(-100%);
+        transition: all 0.5s ease;
+        display:none;
         z-index:999;
         overflow-y:auto;
-        transition: all 0.5s ease;
-        transform: translateY(-100%);
     }
 
     .navbar.active{
@@ -493,7 +484,6 @@ span{
         text-align:center;
     }
 
-    /* About section responsive */
     .about{
         flex-direction:column;
     }
@@ -503,39 +493,37 @@ span{
         margin:2rem 0;
     }
 
+    .about-content .btn{
+        width:60%;
+    }
+
     .about-content .social-media{
         justify-content:center;
     }
 
-    .about-content .btn{
-        width:60%;
-        margin:1rem auto;
-    }
-
     .projects-container{
-        grid-template-columns: 1fr;
-        width: 100%;
-        gap: 2rem;
-        padding: 0 5%;
+        grid-template-columns:1fr;
+        padding:0 5%;
+        gap:2rem;
     }
 
     .education-container, .education-box{
-        width: 90%;
-        margin: auto;
+        width:90%;
+        margin:auto;
     }
 
     .skills-container{
-        justify-content: center;
-        gap: 1rem;
+        justify-content:center;
+        gap:1rem;
     }
 }
 
-@media(max-width: 450px){
+@media(max-width:450px){
     html{
-        font-size: 50%;
+        font-size:50%;
     }
     .contact form .input-box input,
     .contact form textarea{
-        width: 100%;
+        width:100%;
     }
 }
