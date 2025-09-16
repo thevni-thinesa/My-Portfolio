@@ -455,33 +455,35 @@ span{
     }
 
     .navbar{
-        position:fixed;
-        top:0;
-        left:0;
-        width:100vw;
-        height:100vh;
-        flex-direction:column;
-        justify-content:flex-start;
-        align-items:center;
-        background: rgba(25,31,54,0.95);
-        gap:2rem;
-        padding-top:8rem;
-        transform: translateY(-100%);
-        transition: all 0.5s ease;
-        display:none;
-        z-index:999;
-        overflow-y:auto;
+        position: fixed;
+        top: 0%;
+        left: 30%;
+        transform: translateX(-50%) translateY(-100%); /* start hidden above screen */
+        width: 90%;
+        max-width: 350px;
+        background: rgba(25, 31, 54, 0.705); /* translucent background */
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 4rem 2rem 2rem; /* space for menu icon */
+        border-radius: 1.5rem;
+        box-shadow: 0 0 2rem rgba(229, 223, 223, 0.68);
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        display: flex;
+        opacity: 0;
+        z-index: 999;
     }
 
     .navbar.active{
-        display:flex;
-        transform: translateY(0);
+        transform: translateX(-50%) translateY(0); /* slide down when active */
+        opacity: 1;
     }
 
     .navbar a{
-        font-size:2rem;
-        margin:2rem 0;
-        text-align:center;
+        font-size: 1.8rem;
+        margin: 1rem 0;
+        text-align: center;
     }
 
     .about{
@@ -508,8 +510,8 @@ span{
     }
 
     .education-container, .education-box{
-        width:90%;
-        margin:auto;
+        width:220%;
+        margin-right: 55%;
     }
 
     .skills-container{
@@ -527,3 +529,4 @@ span{
         width:100%;
     }
 }
+
