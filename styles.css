@@ -448,6 +448,120 @@ span{
     color: var(--snd-bg-color);
 }
 
+/* BREAKPOINTS */
+/* Tablets and large phones (up to 768px) */
+@media (max-width: 450px) {
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+        margin-left: 10%;
+    }
 
+    .navbar {
+        position:absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -100%); /* hidden above screen */
+        width: 50%;
+        height: 55%;
+        background: rgba(25, 31, 54, 0.85);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem 2rem 2rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 0 2rem rgba(229, 223, 223, 0.68);
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        display: flex;
+        opacity: 0;
+        z-index: 999;
+        overflow-y: auto; /* scrollable if content overflows */
+        max-height: 80vh;
+    }
+
+    .navbar.active {
+        transform: translate(-50%, -50%); /* center when active */
+        opacity: 1;
+    }
+
+    .navbar a {
+        font: size 50px;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .navbarg {
+        margin-right: 10%;
+    }
+
+    /* About section */
+    .about {
+        flex-direction: column;
+        padding: 5rem 5%;
+        padding-top: 20%;
+    }
+
+    .about-img img {
+        width: 60vw;
+        margin: 2rem 0;
+    }
+
+    .about-content .btn {
+        width: 50%;
+        
+    }
+
+    .about-content .social-media {
+        justify-content: center;
+    }
+
+    /* Projects */
+    .projects-container {
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+        gap: 2rem;
+    }
+
+    /* Education */
+    .education-container, .education-box {
+        width: 220%;
+        margin-right: 55%;
+    }
+
+    /* Skills */
+    .skills-container {
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+/* Small phones (up to 450px) */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 100%;
+    }
+
+    .about-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .about-content h3 {
+        font-size: 3rem;
+    }
+
+    .navbar {
+        padding: 3rem 1.5rem 2rem;
+    }
+
+    .navbar a {
+        font-size: 1.6rem;
+    }
+}
 
 
