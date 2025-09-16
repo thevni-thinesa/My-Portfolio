@@ -452,7 +452,9 @@ span{
 /* Tablets and large phones (up to 768px) */
 @media (max-width: 450px) {
     #menu-icon {
+        display: contents;
         cursor: pointer;
+        margin-left: 10%;
     }
 
     .navbar {
