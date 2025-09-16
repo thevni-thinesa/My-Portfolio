@@ -489,9 +489,10 @@ span{
         margin: 1rem 0;
         text-align: center;
     }
+}
 
     /* About section */
-    .about {
+    /*.about {
         flex-direction: column;
         padding: 5rem 5%;
     }
@@ -510,24 +511,24 @@ span{
     }
 
     /* Projects */
-    .projects-container {
+    /*.projects-container {
         grid-template-columns: 1fr;
         padding: 0 5%;
         gap: 2rem;
     }
 
     /* Education */
-    .education-container, .education-box {
+    /*.education-container, .education-box {
         width: 220%;
         margin-right: 55%;
     }
 
     /* Skills */
-    .skills-container {
+    /*.skills-container {
         justify-content: center;
         gap: 1rem;
     }
-}
+}*/
 
 /* Small phones (up to 450px) */
 @media (max-width: 360px) {
