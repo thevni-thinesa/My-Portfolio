@@ -3,7 +3,7 @@
 let menuIcon = document.querySelector('#menu-icon');
 let Navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () =>{
+menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-xmark');
     Navbar.classList.toggle('active');
 };
@@ -23,7 +23,7 @@ window.onscroll = () => {
         if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('header nav a [href*=' + Id + ']').classList.add('active');
+                document.querySelector('header nav a[href*=' + Id + ']').classList.add('active');
             });
         };
     });

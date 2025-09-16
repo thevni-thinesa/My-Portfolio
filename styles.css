@@ -194,7 +194,7 @@ span{
 }
 
 .skills h1{
-    margin-bottom: 4rem;
+    /*margin-bottom: 4rem;*/
     font-size: 4rem;
 }
 
@@ -240,7 +240,7 @@ span{
 }
 
 .projects h1{
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
     font-size: 4rem;
 }
 
@@ -323,7 +323,7 @@ span{
 }
 
 .education h2{
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
     font-size: 4rem;
 }
 
@@ -510,6 +510,7 @@ span{
     }
 
     .navbar{
+        display: none; /* initially hidden */
         position: absolute;
         top: 100%;
         left: 0;
@@ -517,12 +518,10 @@ span{
         padding: 1rem 3%;
         background: var(--snd-bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
     }
 
-    .navbar .active{
-        display: block;
+    .navbar.active{
+        display: block; /* show when toggled */
     }
 
     .navbar a{
