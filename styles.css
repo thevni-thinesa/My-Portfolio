@@ -450,10 +450,11 @@ span{
 
 /* BREAKPOINTS */
 /* Tablets and large phones (up to 768px) */
-@media (max-width: 768px) {
+@media (max-width: 450px) {
     #menu-icon {
         display: contents;
         cursor: pointer;
+        margin-left: 10%;
     }
 
     .navbar {
@@ -486,8 +487,12 @@ span{
 
     .navbar a {
         font: size 50px;
-        /*margin: 1rem 0;*/
+        margin: 1rem 0;
         text-align: center;
+    }
+
+    .navbarg {
+        margin-right: 10%;
     }
 
     /* About section */
@@ -532,14 +537,14 @@ span{
 }
 
 /* Small phones (up to 450px) */
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     html {
         font-size: 50%;
     }
 
     .contact form .input-box input,
     .contact form textarea {
-        width: 90%;
+        width: 50%;
     }
 
     .about-content h1 {
