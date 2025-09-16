@@ -468,7 +468,7 @@ span{
 
 /*BREAKPOINT*/
 
-@media (max-width: 1200px){
+@media (max-width: 768px){
     html{
         font-size: 55%;
     }
@@ -510,24 +510,32 @@ span{
     }
 
     .navbar{
-        display: none; /* initially hidden */
-        position: absolute;
-        top: 100%;
+        display: none; /* hidden by default */
+        position: fixed; /* stay on top while scrolling */
+        top: 0;          /* align to top */
         left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--snd-bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
+        width: 100vw;    /* full screen width */
+        height: 100vh;   /* full screen height */
+        padding: 5rem 3%; /* add top padding so links don’t overlap header */
+        background: rgba(25, 31, 54, 0.95); /* semi-transparent */
+        flex-direction: column; /* stack links vertically */
+        justify-content: flex-start;
+        z-index: 999; /* stay above everything */
+        overflow-y: auto; /* scrollable if content is too tall */
+        transition: all 0.5s ease;
+        transform: translateY(-100%);
     }
 
     .navbar.active{
-        display: block; /* show when toggled */
+        display: flex; /* show when toggled */
+        transform: translateY(0);
     }
 
     .navbar a{
-        display: block;
         font-size: 2rem;
-        margin: 3rem 0;
+        margin: 2rem 0;
+        color: var(--text-color);
+        text-align: center;
     }
 
     .about{
