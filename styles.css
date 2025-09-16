@@ -532,7 +532,7 @@ span{
 /* Small phones (up to 450px) */
 @media (max-width: 360px) {
     html {
-        font-size: 30%;
+        font-size: 50%;
     }
 
     .contact form .input-box input,
